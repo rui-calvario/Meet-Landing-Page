@@ -4,3 +4,36 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 16px; }
+
+body {
+  background-color: #f2f2f2; }
+
+.header {
+  margin: 0 auto;
+  padding: 0;
+  height: 10vh;
+  width: 100vw;
+  border: 1px solid #25283d;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer {
+  margin: 0 auto;
+  padding: 0;
+  height: 35vh;
+  width: 100%;
+  border: 1px solid blue;
+  background-image: url(../images/desktop/image-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.footer-container {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  max-width: 1440px;
+  border: 1px solid #25283d;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
