@@ -73,5 +73,6 @@ $font: 'Red Hat Display', sans-serif;
 
 @mixin purpleBtnHover {
 	background-color: $hover-purple;
-	transition: all 0.5s;
+	transition: all 0.8s;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
