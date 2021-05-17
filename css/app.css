@@ -12,18 +12,53 @@ body {
   margin: 0 auto;
   padding: 0;
   height: 10vh;
-  width: 100vw;
-  border: 1px solid #25283d;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
 
+.gallery {
+  position: relative;
+  width: 100%;
+  height: 40vh; }
+
+.gallery-container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.gallery-container img {
+  max-width: 23%;
+  border-radius: 8px; }
+
+.about-content {
+  position: relative;
+  width: 100%;
+  padding: 3rem 0; }
+
+.about-container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 28rem; }
+
 .footer {
   margin: 0 auto;
   padding: 0;
-  height: 35vh;
+  position: relative;
+  height: 40vh;
   width: 100%;
-  border: 1px solid blue;
   background-image: url(../images/desktop/image-footer.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
@@ -33,7 +68,72 @@ body {
   padding: 0;
   height: 100%;
   max-width: 1440px;
-  border: 1px solid #25283d;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; }
+
+.footer-item {
+  max-width: 25%; }
+
+button {
+  background-color: #855fb1;
+  border-radius: 50px;
+  padding: 10px 35px;
+  color: #fafafa;
+  font: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #87879d;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s; }
+
+h2 {
+  font: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 2.75rem; }
+
+h2.about {
+  text-align: center;
+  padding: 1.5rem 0; }
+
+h2.footer-text {
+  padding-right: 2.5rem;
+  color: #fafafa; }
+
+h3 {
+  font: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: #4d96a9; }
+
+p {
+  font: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #87879d; }
+
+p.about {
+  text-align: center; }
+
+p.footer-text {
+  color: #fafafa;
+  padding-right: 0.5rem;
+  margin-left: -4rem; }
+
+button {
+  color: white;
+  font-size: 1rem; }
+
+button:hover {
+  background-color: #b18bdd;
+  transition: all 0.5s; }
+
+button span {
+  color: #d9b8ff; }

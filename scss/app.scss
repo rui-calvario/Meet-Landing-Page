@@ -8,3 +8,49 @@
 @import 'landing';
 @import 'about';
 @import 'footer';
+
+//STANDARD
+h2 {
+	@include heading2;
+}
+
+h2.about {
+	text-align: center;
+	padding: 1.5rem 0;
+}
+
+h2.footer-text {
+	padding-right: 2.5rem;
+	color: $white;
+}
+
+h3 {
+	@include overline;
+}
+
+p {
+	@include body;
+}
+
+p.about {
+	text-align: center;
+}
+
+p.footer-text {
+	color: $white;
+	padding-right: 0.5rem;
+	margin-left: -4rem;
+}
+
+button {
+	color: white;
+	font-size: 1rem;
+}
+
+button:hover {
+	@include purpleBtnHover;
+}
+
+button span {
+	color: $light-purple;
+}

@@ -4,9 +4,9 @@
 .footer {
 	margin: 0 auto;
 	padding: 0;
-	height: 35vh;
+	position: relative;
+	height: 40vh;
 	width: 100%;
-	border: 1px solid blue;
 	background-image: url(../images/desktop/image-footer.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -17,8 +17,15 @@
 	padding: 0;
 	height: 100%;
 	max-width: 1440px;
-	border: 1px solid $black;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+}
+
+.footer-item {
+	max-width: 25%;
+}
+
+button {
+	@include purpleBtn;
 }

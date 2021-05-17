@@ -1,1 +1,45 @@
 @import 'variablesMixins';
+
+//ABOUT SECTION
+//gallery
+.gallery {
+	position: relative;
+	width: 100%;
+	height: 40vh;
+}
+
+.gallery-container {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1440px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.gallery-container img {
+	max-width: 23%;
+	border-radius: 8px;
+}
+
+//content
+.about-content {
+	position: relative;
+	width: 100%;
+	padding: 3rem 0;
+}
+
+.about-container {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1440px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 28rem;
+}
