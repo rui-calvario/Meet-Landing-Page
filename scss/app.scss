@@ -4,12 +4,18 @@
 //IMPORT RESET PARTIAL
 @import 'reset';
 @import 'variablesMixins';
+@import 'divider';
 @import 'header';
 @import 'landing';
 @import 'about';
 @import 'footer';
 
 //STANDARD
+h1 {
+	@include heading1;
+	text-align: center;
+}
+
 h2 {
 	@include heading2;
 }
@@ -30,6 +36,11 @@ h3 {
 
 p {
 	@include body;
+}
+
+p.landing-text {
+	text-align: center;
+	padding: 2.5rem 0;
 }
 
 p.about {
@@ -53,4 +64,8 @@ button:hover {
 
 button span {
 	color: $light-purple;
+}
+
+button.download span {
+	color: $turquoise;
 }

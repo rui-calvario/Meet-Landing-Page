@@ -8,6 +8,29 @@
 body {
   background-color: #f2f2f2; }
 
+.divider {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; }
+
+.line {
+  height: 50%;
+  border: 1px solid #87879d;
+  opacity: 0.25; }
+
+.circle {
+  background-color: #f2f2f2;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  padding: 15px 18px;
+  border-radius: 50%; }
+
 .header {
   margin: 0 auto;
   padding: 0;
@@ -17,10 +40,97 @@ body {
   justify-content: center;
   align-items: center; }
 
+.landing {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+
+.landing-container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%; }
+
+.hero-left {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start; }
+
+.hero-left img {
+  object-fit: cover;
+  margin-left: -30px; }
+
+.heading-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem; }
+
+.hero-right {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end; }
+
+.hero-right img {
+  object-fit: cover;
+  margin-right: -30px; }
+
+.landing-buttons {
+  display: flex;
+  flex-direction: row; }
+
+button.download {
+  margin-right: 10px;
+  background-color: #4d96a9;
+  border-radius: 50px;
+  padding: 10px 35px;
+  color: #fafafa;
+  font: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #87879d;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.8s;
+  color: #fafafa; }
+
+button.download:hover {
+  background-color: #71c0d4;
+  transition: all 0.8s;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); }
+
+button.info {
+  margin-left: 10px;
+  background-color: #855fb1;
+  border-radius: 50px;
+  padding: 10px 35px;
+  color: #fafafa;
+  font: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #87879d;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.8s;
+  color: white; }
+
+button.info:hover {
+  background-color: #b18bdd;
+  transition: all 0.8s;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); }
+
 .gallery {
   position: relative;
   width: 100%;
-  height: 40vh; }
+  height: 40vh;
+  padding-top: 3.5rem; }
 
 .gallery-container {
   margin: 0 auto;
@@ -40,7 +150,7 @@ body {
 .about-content {
   position: relative;
   width: 100%;
-  padding: 3rem 0; }
+  padding: 6rem 0 4.5rem 0; }
 
 .about-container {
   margin: 0 auto;
@@ -51,7 +161,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 28rem; }
+  padding: 0 20%; }
 
 .footer {
   margin: 0 auto;
@@ -63,7 +173,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #4d96a9;
-  background-blend-mode: multiply; }
+  background-blend-mode: multiply;
+  margin-top: -35px; }
 
 .footer-container {
   margin: 0 auto;
@@ -89,7 +200,14 @@ button {
   color: #87879d;
   border: none;
   cursor: pointer;
-  transition: background-color 0.5s; }
+  transition: background-color 0.8s; }
+
+h1 {
+  font: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: center; }
 
 h2 {
   font: "Red Hat Display", sans-serif;
@@ -121,6 +239,10 @@ p {
   line-height: 1.625rem;
   color: #87879d; }
 
+p.landing-text {
+  text-align: center;
+  padding: 2.5rem 0; }
+
 p.about {
   text-align: center; }
 
@@ -140,3 +262,6 @@ button:hover {
 
 button span {
   color: #d9b8ff; }
+
+button.download span {
+  color: #8fe3f9; }
