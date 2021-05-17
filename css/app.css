@@ -61,7 +61,9 @@ body {
   width: 100%;
   background-image: url(../images/desktop/image-footer.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-color: #4d96a9;
+  background-blend-mode: multiply; }
 
 .footer-container {
   margin: 0 auto;
