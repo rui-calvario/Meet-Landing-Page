@@ -28,6 +28,11 @@ h2.about {
 h2.footer-text {
 	padding-right: 2.5rem;
 	color: $white;
+
+	@media screen and (max-width: 1024px) {
+		padding: 0;
+		text-align: center;
+	}
 }
 
 h3 {
@@ -45,12 +50,22 @@ p.landing-text {
 
 p.about {
 	text-align: center;
+
+	@media screen and (max-width: 768px) {
+		font-size: 1rem;
+	}
 }
 
 p.footer-text {
 	color: $white;
 	padding-right: 0.5rem;
 	margin-left: -4rem;
+
+	@media screen and (max-width: 1024px) {
+		padding-right: 0;
+		margin-left: 0;
+		text-align: center;
+	}
 }
 
 button {

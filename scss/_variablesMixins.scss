@@ -27,6 +27,11 @@ $font: 'Red Hat Display', sans-serif;
 	font-weight: 900;
 	font-size: 2.5rem;
 	line-height: 2.75rem;
+
+	@media screen and (max-width: 375px) {
+		font-size: 2rem;
+		line-height: 2.25rem;
+	}
 }
 
 @mixin overline {
@@ -37,6 +42,10 @@ $font: 'Red Hat Display', sans-serif;
 	letter-spacing: 0.25rem;
 	text-transform: uppercase;
 	color: $green;
+
+	@media screen and (max-width: 375px) {
+		text-align: center;
+	}
 }
 
 @mixin body {

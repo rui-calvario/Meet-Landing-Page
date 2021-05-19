@@ -131,6 +131,12 @@ button.info:hover {
   width: 100%;
   height: 40vh;
   padding-top: 3.5rem; }
+  @media screen and (max-width: 768px) {
+    .gallery {
+      padding-top: 0; } }
+  @media screen and (max-width: 550px) {
+    .gallery {
+      height: 65%; } }
 
 .gallery-container {
   margin: 0 auto;
@@ -142,15 +148,39 @@ button.info:hover {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 1440px) {
+    .gallery-container {
+      padding: 0 5%; } }
+  @media screen and (max-width: 768px) {
+    .gallery-container {
+      padding: 0 3%; } }
+  @media screen and (max-width: 550px) {
+    .gallery-container {
+      flex-wrap: wrap;
+      padding: 15% 3% 0 3%;
+      justify-content: space-around; } }
 
 .gallery-container img {
   max-width: 23%;
   border-radius: 8px; }
+  @media screen and (max-width: 550px) {
+    .gallery-container img {
+      max-width: 46%;
+      margin-top: 5%; } }
 
 .about-content {
   position: relative;
   width: 100%;
-  padding: 6rem 0 4.5rem 0; }
+  padding: 6% 0 4% 0; }
+  @media screen and (max-width: 1024px) {
+    .about-content {
+      padding: 3% 0 4% 0; } }
+  @media screen and (max-width: 768px) {
+    .about-content {
+      padding: 0 0 7% 0; } }
+  @media screen and (max-width: 550px) {
+    .about-content {
+      padding: 15% 0 15% 0; } }
 
 .about-container {
   margin: 0 auto;
@@ -162,6 +192,12 @@ button.info:hover {
   justify-content: center;
   align-items: center;
   padding: 0 20%; }
+  @media screen and (max-width: 550px) {
+    .about-container {
+      padding: 0 8%; } }
+  @media screen and (max-width: 375px) {
+    .about-container {
+      padding: 0 5%; } }
 
 .footer {
   margin: 0 auto;
@@ -175,6 +211,16 @@ button.info:hover {
   background-color: #4d96a9;
   background-blend-mode: multiply;
   margin-top: -35px; }
+  @media screen and (max-width: 1024px) {
+    .footer {
+      height: 60vh;
+      background-position: center center; } }
+  @media screen and (max-width: 768px) {
+    .footer {
+      background-image: url(../images/tablet/image-footer.jpg); } }
+  @media screen and (max-width: 375px) {
+    .footer {
+      background-image: url(../images/mobile/image-footer.jpg); } }
 
 .footer-container {
   margin: 0 auto;
@@ -184,9 +230,25 @@ button.info:hover {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 1440px) {
+    .footer-container {
+      padding: 0 5%; } }
+  @media screen and (max-width: 1024px) {
+    .footer-container {
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 15% 15%; } }
+  @media screen and (max-width: 375px) {
+    .footer-container {
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 25% 15%; } }
 
 .footer-item {
   max-width: 25%; }
+  @media screen and (max-width: 1024px) {
+    .footer-item {
+      max-width: none; } }
 
 button {
   background-color: #855fb1;
@@ -214,6 +276,10 @@ h2 {
   font-weight: 900;
   font-size: 2.5rem;
   line-height: 2.75rem; }
+  @media screen and (max-width: 375px) {
+    h2 {
+      font-size: 2rem;
+      line-height: 2.25rem; } }
 
 h2.about {
   text-align: center;
@@ -222,6 +288,10 @@ h2.about {
 h2.footer-text {
   padding-right: 2.5rem;
   color: #fafafa; }
+  @media screen and (max-width: 1024px) {
+    h2.footer-text {
+      padding: 0;
+      text-align: center; } }
 
 h3 {
   font: "Red Hat Display", sans-serif;
@@ -231,6 +301,9 @@ h3 {
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   color: #4d96a9; }
+  @media screen and (max-width: 375px) {
+    h3 {
+      text-align: center; } }
 
 p {
   font: "Red Hat Display", sans-serif;
@@ -245,11 +318,19 @@ p.landing-text {
 
 p.about {
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    p.about {
+      font-size: 1rem; } }
 
 p.footer-text {
   color: #fafafa;
   padding-right: 0.5rem;
   margin-left: -4rem; }
+  @media screen and (max-width: 1024px) {
+    p.footer-text {
+      padding-right: 0;
+      margin-left: 0;
+      text-align: center; } }
 
 button {
   color: white;
