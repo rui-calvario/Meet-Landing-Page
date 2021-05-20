@@ -41,48 +41,78 @@ body {
   align-items: center; }
 
 .landing {
+  position: relative;
   margin: 0 auto;
   padding: 0;
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; }
+  height: 70vh; }
+  @media screen and (max-width: 1280px) {
+    .landing {
+      height: 85vh;
+      margin-bottom: 10%; } }
 
 .landing-container {
+  height: 100%;
   display: grid;
-  grid-template-columns: 25% 50% 25%; }
+  grid-template-columns: repeat(auto-fit, minmax(426px, 1fr));
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden; }
+  @media screen and (max-width: 1280px) {
+    .landing-container {
+      grid-template-columns: repeat(auto-fit, minmax(256px, 2fr));
+      grid-template-columns: 50% 50%;
+      padding: 3% 0; } }
 
 .hero-left {
-  height: 100%;
-  display: flex;
-  justify-content: flex-start; }
-
-.hero-left img {
-  object-fit: cover;
+  justify-self: start;
   margin-left: -30px; }
+  @media screen and (max-width: 1280px) {
+    .hero-left {
+      order: 1;
+      justify-self: end;
+      margin-right: 5%; } }
 
 .heading-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5rem; }
+  justify-self: center; }
+  @media screen and (max-width: 1280px) {
+    .heading-content {
+      order: 3;
+      grid-column: 1 / -1;
+      padding: 8% 25%; } }
+  @media screen and (max-width: 768px) {
+    .heading-content {
+      padding: 8% 10%; } }
+  @media screen and (max-width: 768px) {
+    .heading-content {
+      padding: 0% 5%; } }
+  @media screen and (max-width: 375px) {
+    .heading-content {
+      padding: 0% 2%; } }
 
 .hero-right {
-  height: 100%;
-  display: flex;
-  justify-content: flex-end; }
+  justify-self: end;
+  justify-content: end;
+  margin-right: -30px; }
+  @media screen and (max-width: 1280px) {
+    .hero-right {
+      justify-self: start;
+      justify-content: start;
+      margin-left: 5%;
+      order: 2; } }
+
+.hero-left img {
+  max-width: 100%; }
+  @media screen and (max-width: 1280px) {
+    .hero-left img {
+      max-width: 100%; } }
 
 .hero-right img {
-  object-fit: cover;
-  margin-right: -30px; }
+  max-width: 100%; }
 
 .landing-buttons {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center; }
 
 button.download {
   margin-right: 10px;
@@ -99,6 +129,9 @@ button.download {
   cursor: pointer;
   transition: background-color 0.8s;
   color: #fafafa; }
+  @media screen and (max-width: 768px) {
+    button.download {
+      font-size: 1rem; } }
 
 button.download:hover {
   background-color: #71c0d4;
@@ -120,6 +153,9 @@ button.info {
   cursor: pointer;
   transition: background-color 0.8s;
   color: white; }
+  @media screen and (max-width: 768px) {
+    button.info {
+      font-size: 1rem; } }
 
 button.info:hover {
   background-color: #b18bdd;
@@ -263,6 +299,9 @@ button {
   border: none;
   cursor: pointer;
   transition: background-color 0.8s; }
+  @media screen and (max-width: 768px) {
+    button {
+      font-size: 1rem; } }
 
 h1 {
   font: "Red Hat Display", sans-serif;
@@ -270,6 +309,14 @@ h1 {
   font-size: 4rem;
   line-height: 4rem;
   text-align: center; }
+  @media screen and (max-width: 1280px) {
+    h1 {
+      font-size: 3rem;
+      line-height: 3rem; } }
+  @media screen and (max-width: 420px) {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 2.5rem; } }
 
 h2 {
   font: "Red Hat Display", sans-serif;
@@ -311,6 +358,9 @@ p {
   font-size: 1.125rem;
   line-height: 1.625rem;
   color: #87879d; }
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 1rem; } }
 
 p.landing-text {
   text-align: center;
